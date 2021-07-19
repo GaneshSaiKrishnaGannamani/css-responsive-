@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav">
+                <div class="title">
+                    <h1>Keyboard</h1>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">photos</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img1">
+                <img src="images/imgkb.png" alt="image of keyboard" />
+            </div>
+            <div class="fullsection">
+                <div class="listbox">
+                    <div class="box1">
+                        <h2>CATEGORIES</h2>
+
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <hr />
+                            <li>Lorem ipsum dolor sit.</li>
+                            <hr />
+                            <li>Lorem, ipsum dolor.</li>
+                            <hr />
+                            <li>Lorem ipsum dolor sit.</li>
+                            <hr />
+                        </ul>
+                    </div>
+                    <div class="box2">
+                        <h2>ARCHIVES</h2>
+
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <hr />
+                            <li>Lorem ipsum dolor sit.</li>
+                            <hr />
+                            <li>Lorem, ipsum dolor.</li>
+                            <hr />
+                            <li>Lorem ipsum dolor sit.</li>
+                            <hr />
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <hr />
+                            <li>Lorem ipsum dolor sit.</li>
+                            <hr />
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contant">
+                    <div class="contant1">
+                        <h1>WELCOME TO KEYBOARD</h1>
+                        <div class="date">
+                            <p>September 12,2020</p>
+                            <p>Posted by <span>someone</span></p>
+                        </div>
+                        <div class="para1">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Illo nam sequi quidem ratione
+                                dicta ab! Quidem sed cumque fugit assumenda quod
+                                ipsum architecto, mollitia esse saepe
+                                repellendus incidunt, nisi possimus asperiores
+                                eius voluptatum eaque? Ea odit eum soluta id
+                                explicabo harum. Repellat reprehenderit voluptas
+                                cupiditate impedit voluptate perferendis
+                                veritatis aspernatur! <br />
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quia tempora eveniet alias
+                                asperiores deleniti. Laboriosam quisquam saepe
+                                sunt suscipit ipsum non magnam libero neque amet
+                                fugiat, assumenda harum rerum dignissimos iusto
+                                pariatur dolorem debitis velit error nesciunt
+                                aliquid, et, iure ratione placeat. Amet iure
+                                quas hic sequi voluptatem officiis ipsa.
+                            </p>
+                        </div>
+                        <div class="btns">
+                            <button class="btnread1" onclick="main()">
+                                Read More
+                            </button>
+                            <button class="btnread3">Read Less</button>
+                            <button>Comments</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="contant2">
+                        <h1>Lorem ipsum dolor sit.</h1>
+                        <div class="date">
+                            <p>September 12,2020</p>
+                            <p>Posted by <span>someone</span></p>
+                        </div>
+                        <div class="para2">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Illo nam sequi quidem ratione
+                                dicta ab! Quidem sed cumque fugit assumenda quod
+                                ipsum architecto, mollitia esse saepe
+                                repellendus incidunt, nisi possimus asperiores
+                                eius voluptatum eaque? Ea odit eum soluta id
+                                explicabo harum. Repellat reprehenderit voluptas
+                                cupiditate impedit voluptate perferendis
+                                veritatis aspernatur! <br />
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quia tempora eveniet alias
+                                asperiores deleniti. Laboriosam quisquam saepe
+                                sunt suscipit ipsum non magnam libero neque amet
+                                fugiat, assumenda harum rerum dignissimos iusto
+                                pariatur dolorem debitis velit error nesciunt
+                                aliquid, et, iure ratione placeat. Amet iure
+                                quas hic sequi voluptatem officiis ipsa.
+                            </p>
+                        </div>
+                        <div class="btns">
+                            <button class="btnread2">Read More</button>
+                            <button class="btnread4">Read Less</button>
+                            <button>Comments</button>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>
+                Copyright &#169; 2020 sitename.com .all rights reserved design
+                by fct
+            </p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $("document").ready(function () {
+                $(".btnread1").click(function () {
+                    $(".para1").height("auto");
+                    $(".btnread3").display("block");
+                });
+                $(".btnread3").click(function () {
+                    $(".para1").height("140px");
+                    // $("btnread3").display("block");
+                });
+                $(".btnread2").click(function () {
+                    $(".para2").height("auto");
+                    $(".btnread4").display("block");
+                });
+                $(".btnread4").click(function () {
+                    $(".para2").height("140px");
+                    // $("btnread4").display("block");
+                });
+            });
+        </script>
+    </body>
+</html>
